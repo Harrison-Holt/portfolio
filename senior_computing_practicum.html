@@ -48,13 +48,20 @@
 
         <section id="current_phase" class="mt-5">
             <h3>Current Phase</h3>
-            <p>We are starting to build the basic infrastructure of our project. Currently, we are setting up the database using AWS RDS and deploying our website on AWS Amplify. This section will be updated as we progress through each milestone.</p>
+            <p>We are currently working on several key features for our project:</p>
+            <ul>
+                <li>Implementing order confirmation emails using AWS SES.</li>
+                <li>Creating a user reviews feature for catalog items.</li>
+                <li>Allowing drivers to add items to their catalog and purchase with points.</li>
+                <li>Setting up notifications for drivers to alert them when points are spent or added.</li>
+                <li>Allowing drivers to view their profile and see purchase history.</li>
+                <li>Adding tabs for tracking future purchases.</li>
+            </ul>
             <div class="progress-container">
                 <div class="progress-bar"></div>
             </div>
-            <p>Progress: Week 4 of 17</p>
+            <p>Progress: Week 11 of 17</p>
         </section>
-        
 
         <section id="release_plan" class="mt-5">
             <h3>Release Plan</h3>
@@ -66,13 +73,17 @@
             <ul>
                 <li><strong>Hosting:</strong> AWS Amplify</li>
                 <li><strong>Database:</strong> AWS RDS with MySQL</li>
+                <li><strong>Database Management:</strong> MySQL Workbench</li>
                 <li><strong>Back-End:</strong> Node.js, AWS Lambda</li>
-                <li><strong>Front-End:</strong> React and Bootstrap</li>
+                <li><strong>Front-End:</strong> React, Vite, TypeScript, and Material UI</li>
                 <li><strong>Version Control:</strong> Git</li>
                 <li><strong>Project Management:</strong> Azure DevOps</li>
                 <li><strong>API Testing:</strong> Postman</li>
+                <li><strong>Debugging:</strong> AWS CloudWatch</li>
+                <li><strong>Email Service:</strong> AWS SES</li>
             </ul>
         </section>
+        
         
 
         <section id="user_stories" class="mt-5">
@@ -82,16 +93,43 @@
         
         <hr class="my-divider">
 
-         <!-- Placeholder for Coding and Testing -->
-         <section id="coding_testing" class="mt-5v">
-            <h3><i class="fas fa-code coding-icon"></i> Coding and Testing</h3>
-            <p>Details about the coding and testing phases will be added here as the project progresses. Check back soon for updates!</p>
-
-            <section id="accessibility_in_coding" class="mt-5">
-                <h3><i class="fas fa-universal-access accessibility-icon"></i> Accessibility in Our Coding Process</h3>
-                <p>Our goal is to make our application accessible to all users, including those with disabilities. Although we're still in the planning stage, we aim to implement features such as customizable themes, font adjustments, high contrast modes, and screen reader compatibility. The user stories section outlines our planned accessibility enhancements, and this section will detail our implementation and testing methods as we progress through development.</p>
-            </section>            
+        <section id="coding_testing" class="mt-5">
+            <h3><i class="fas fa-code" style="color: #007bff;"></i> Coding and Testing</h3>
+        
+            <p>Throughout this project, I have focused on several key areas:</p>
+        
+            <ul>
+                <li>Building and deploying AWS Lambda functions to handle backend processes like catalog management and user authentication.</li>
+                <li>Setting up AWS API Gateway to connect the front-end with our serverless backend infrastructure.</li>
+                <li>Implementing AWS SES to send order confirmation emails as part of our e-commerce workflow.</li>
+                <li>I have been the sole developer working on the catalog integration so far. Initially, I used the eBay API for our product catalog, but due to the complexity and frustration of working with their API keys, I switched to using iTunes' public API, which simplified our catalog implementation.</li>
+            </ul>
+        
+            <h4 class="mt-4"><i class="fas fa-exclamation-triangle" style="color: #dc3545;"></i> Current Issues</h4>
+            <ul>
+                <li>We are currently facing deployment issues with AWS Amplify due to incompatibilities with some packages, causing our dev branch to not run properly. I am working on fixing these issues to get our app fully deployed again.</li>
+                <li>Our production environment is still operational, but it has not yet been updated with the latest changes.</li>
+                <li>We are struggling with merge conflicts as we attempt to combine all five of our branches into the dev branch. This has been a challenging process, but we are collaborating as a team to resolve these conflicts and move forward.</li>
+                <li>While working on the catalog integration, I encountered challenges with CORS errors and API integration issues. These have caused delays, but I am actively working on resolving them to ensure the catalog functions seamlessly and integrates fully with our system.</li>
+            </ul>
+        
+            <h4 class="mt-4"><i class="fas fa-universal-access" style="color: #ffc107;"></i> Upcoming Focus: Accessibility</h4>
+            <p>
+                Accessibility is a priority for our team. While we have not fully implemented these features yet, we plan to include:
+            </p>
+            <ul>
+                <li>Screen reader compatibility</li>
+                <li>Customizable themes and font sizes</li>
+                <li>High contrast modes for better visibility</li>
+            </ul>
+            <p>These features will be implemented in later sprints to ensure our application is accessible to all users, including those with disabilities.</p>
         </section>
+        
+        
+        
+        
+        
+        
 
         <hr class="my-divider">
 
