@@ -2,6 +2,7 @@ body {
     background-color: #F8F4DE;
     padding: 0; 
     margin: 0; 
+    filter: none;
 }
 
 /* Header Styles */
@@ -151,5 +152,69 @@ h1, h2, h3 {
     background-color: black;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+body.dark-mode {
+    background-color: #4B5563;
+    color: #F8F4DE; 
+}
+body.grayscale-mode {
+    filter: grayscale(100%);
+    background-color: #8A8A8A; 
+}
+body.high-contrast-mode {
+    background-color: #000000; 
+    color: #FFFFFF;            
+    border-color: #FFFF00;     
+}
+body.dark-mode button  {
+    background-color: #4682B4;
+    color: #F8F4DE; 
+}
+
+body.dark-mode a {
+    color: #F8F4DE; 
+}
+
+body.dark-mode header {
+    background-color: #1A3D3A;
+    color: #F8F4DE; 
+}
+
+body.high-contrast-mode header, body.high-contrast-mode footer {
+    background-color: #000000; 
+    color: #FFFFFF;            
+}
+
+body.high-contrast-mode button {
+    background-color: #FFFF00; 
+    color: #000000;           
+    border: 2px solid #FFFFFF; 
+}
+
+body.high-contrast-mode a {
+    color: #fff;           
+}
+body.high-contrast-mode a:hover {
+    color: #FFFF00; 
+}
+
+
+body.dark-mode footer {
+    background-color: #1A3D3A;
+    color: #F8F4DE;
+}
+
+body.dark-mode #first_project, body.dark-mode #second_project,body.dark-mode #third_project, 
+body.dark-mode #forth_project,body.dark-mode #fifth_project,body.dark-mode #sixth_project, 
+body.dark-mode #seven_project,body.dark-mode #web_accessibility_focus {
+    background-color: #2C3E50; 
+}
+
+body.high-contrast-mode #first_project, body.high-contrast-mode #second_project,body.high-contrast-mode #third_project, 
+body.high-contrast-mode #forth_project,body.high-contrast-mode #fifth_project,body.high-contrast-mode #sixth_project, 
+body.high-contrast-mode #seven_project,body.high-contrast-mode #web_accessibility_focus {
+    background-color: #fff; 
+    color: #000;
 }
 

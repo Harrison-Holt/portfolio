@@ -178,3 +178,193 @@ iframe {
 .lightbulb-icon  {
     color: #FFD700;
 }
+
+.settings_link {
+    font-size: 24px;
+}
+
+.eye_icon {
+    font-size: 24px;
+}
+body.dark-mode {
+    background-color: #4B5563 ;
+    color: #F8F4DE; 
+}
+
+body.grayscale-mode {
+    filter: grayscale(100%);
+    background-color: #8A8A8A; 
+}
+body.high-contrast-mode {
+    background-color: #000000; 
+    color: #FFFFFF;            
+    border-color: #FFFF00;     
+}
+
+body.high-contrast-mode header, body.high-contrast-mode footer {
+    background-color: #000000; 
+    color: #FFFFFF;            
+}
+
+body.high-contrast-mode button {
+    background-color: #FFFF00; 
+    color: #000000;           
+    border: 2px solid #FFFFFF; 
+}
+
+body.high-contrast-mode a {
+    color: #fff;           
+}
+body.high-contrast-mode a:hover {
+    color: #FFFF00; 
+}
+
+
+body.dark-mode footer {
+    background-color: #1A3D3A;
+    color: #F8F4DE;
+}
+a.high-contrast-mode {
+    color: #FFFF00;            /* Bright yellow links */
+}
+
+body.dark-mode button {
+    background-color: #4682B4 !important;
+    color: #F8F4DE; 
+}
+
+body.dark-mode a {
+    color: #F8F4DE; 
+}
+
+body.dark-mode header {
+    background-color: #1A3D3A;
+    color: #F8F4DE; 
+}
+body.grayscale-mode {
+    filter: grayscale(100%);
+}
+body.dark-mode footer {
+    background-color: #1A3D3A;
+    color: #F8F4DE;
+}
+
+body.dark-mode .project-card {
+    background-color: #2C3E50;
+}
+
+.magnifier {
+    width: 150px;
+    height: 150px; 
+    border-radius: 50%;
+    border: 3px solid #000; 
+    position: absolute; 
+    pointer-events: none;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); 
+    z-index: 99999;
+}
+
+.magnified-content {
+    position: absolute; 
+    width: 200%; 
+    height: 200%; 
+    transform-origin: top left;
+    pointer-events: none;
+}
+
+.skills-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section-title {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.skills-column {
+    width: 45%; /* Equal width for each column */
+}
+
+.column-title {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.skill-bar {
+    margin-bottom: 15px;
+}
+
+.skill-name {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.progress-bar-container {
+    width: 100%;
+    height: 25px;
+    background-color: #e0e0e0; /* Light gray background */
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    transition: width 1.5s ease;
+}
+
+/* Color gradients based on skill level */
+.progress-bar[data-skill-level="30%"] {
+    background: linear-gradient(to right, #FFC0CB, #FF69B4);
+}
+
+.progress-bar[data-skill-level="40%"] {
+    background: linear-gradient(to right, #FF7F50, #FF4500);
+}
+
+.progress-bar[data-skill-level="50%"] {
+    background: linear-gradient(to right, #FFD700, #FFA500);
+}
+
+.progress-bar[data-skill-level="60%"] {
+    background: linear-gradient(to right, #32CD32, #006400);
+}
+
+.progress-bar[data-skill-level="70%"] {
+    background: linear-gradient(to right, #4BC0C0, #36A2EB);
+}
+
+.progress-bar[data-skill-level="75%"] {
+    background: linear-gradient(to right, #FF9F40, #FF6B6B);
+}
+
+.progress-bar[data-skill-level="85%"] {
+    background: linear-gradient(to right, #1E90FF, #00BFFF);
+}
+
+.progress-bar[data-skill-level="90%"] {
+    background: linear-gradient(to right, #FF6347, #FF4500);
+}
+
+.progress-bar[data-skill-level="95%"] {
+    background: linear-gradient(to right, #36A2EB, #9966FF);
+}
+
+.progress-bar[data-skill-level="100%"] {
+    background: linear-gradient(to right, #8A2BE2, #4B0082);
+}
