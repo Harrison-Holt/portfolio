@@ -17,12 +17,120 @@
                 </nav>
             </div>
         </header>
-        <section id="sixth_project">
-            <h1>Accessible Kiosk Design</h1>
-                <p>This Project will be completed in the Course HCC 4510- Inclusive Design and Accessible Technology. This project will be completed in a group of 4 members. This page will be updated as we finish each pharse/milestone. 
-                    Stay Tuned for updates! </p>
-        </section>
-        
+
+        <main class="container">
+            <section id="accessible_project" class="mb-5">
+                <h1>Redesigning the Free Library of Philadelphia Homepage</h1>
+                <p>
+                    For this project, I redesigned the homepage of the Free Library of Philadelphia, focusing on web accessibility. This effort highlights the importance of inclusivity on public websites that serve diverse communities, ensuring access for individuals with disabilities.
+                </p>
+
+                <h2>Goals of the Project</h2>
+                <ul>
+                    <li>Identify and address accessibility issues using tools such as Lighthouse, WAVE, and Pa11y.</li>
+                    <li>Improve usability for individuals with visual, auditory, motor, or cognitive impairments.</li>
+                    <li>Create an intuitive, minimalist design that reduces cognitive load and enhances navigation.</li>
+                </ul>
+
+                <h2>Tools and Methods</h2>
+                <p>Accessibility audits were conducted using:</p>
+                <ul>
+                    <li><strong>WAVE:</strong> For detecting missing form labels, alt text, and heading structure issues.</li>
+                    <li><strong>Lighthouse:</strong> To identify touch target sizing problems, navigation hierarchy issues, and accessibility scores.</li>
+                    <li><strong>Pa11y:</strong> For technical WCAG violations like missing iframe titles and unlabeled form fields.</li>
+                </ul>
+
+                <h2>Redesign Highlights</h2>
+                <ul>
+                    <li>Simplified navigation menu with three main links to reduce decision fatigue.</li>
+                    <li>Prominent search bar with clear labeling and high contrast for ease of use.</li>
+                    <li>Organized content into a 2x2 grid layout for logical grouping and scannability.</li>
+                    <li>Accessible color contrast with buttons and hover effects to ensure visual feedback.</li>
+                    <li>Optimized for screen readers with proper semantic HTML, ARIA roles, and alt text for images.</li>
+                </ul>
+
+                <h2>Accessibility Audit Analysis</h2>
+                <p>
+                    <strong>Pa11y Results:</strong>
+                    <ul>
+                        <li><strong>Iframe Without Title:</strong> Iframes lacked a non-empty title attribute, confusing screen reader users.</li>
+                        <li><strong>Form Without Submit Button:</strong> Forms did not include submit buttons, preventing keyboard-only users from submitting them.</li>
+                        <li><strong>Text Inputs Without Accessible Labels:</strong> Input fields lacked proper labels, making it hard for screen readers to interpret their purpose.</li>
+                        <li><strong>Unlabeled Form Fields:</strong> Form fields were missing accessible labels like <code>aria-label</code> or <code>title</code> attributes.</li>
+                    </ul>
+                </p>
+                <p>
+                    <strong>WAVE Key Findings:</strong>
+                    <ul>
+                        <li>6 Errors:
+                            <ul>
+                                <li>5 Missing Form Labels</li>
+                                <li>1 Broken Skip Link</li>
+                            </ul>
+                        </li>
+                        <li>10 Alerts:
+                            <ul>
+                                <li>2 Skipped Heading Levels</li>
+                                <li>1 Redundant Link</li>
+                                <li>6 Redundant Title Texts</li>
+                            </ul>
+                        </li>
+                        <li>39 Features:
+                            <ul>
+                                <li>9 Null or Empty Alt Texts</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </p>
+                <p>
+                    <strong>Lighthouse Key Findings:</strong>
+                    <ul>
+                        <li><strong>Tables and Lists:</strong> List items were not contained within proper <code>ul</code> or <code>ol</code> tags, causing screen reader issues.</li>
+                        <li><strong>Touch Targets:</strong> Buttons and links lacked sufficient spacing for motor-impaired users.</li>
+                        <li><strong>Navigation:</strong> Heading elements were not in sequential order.</li>
+                        <li><strong>Redundant Alt Text:</strong> Images contained repetitive or meaningless <code>alt</code> attributes.</li>
+                    </ul>
+                </p>
+
+                <h2>Redesign Mockup</h2>
+                <p>Below is an interactive view of the redesigned homepage for the Free Library of Philadelphia:</p>
+                <iframe 
+                    src="Design_Mockup.pdf.pdf" 
+                    width="100%" 
+                    height="600px" 
+                    title="Redesign Mockup for the Free Library of Philadelphia" 
+                    aria-label="Interactive redesign mockup of the Free Library of Philadelphia homepage">
+                </iframe>
+
+                <h2>Accessibility Report Screenshots</h2>
+                <div class="mb-4">
+                    <p><strong>Pa11y Report:</strong></p>
+                    <img src="Screenshot 2024-12-09 123729.png" alt="Pa11y accessibility report results" class="img-fluid mb-3">
+                </div>
+                <div class="mb-4">
+                    <p><strong>WAVE Report:</strong></p>
+                    <img src="Screenshot 2024-12-09 125235.png" alt="WAVE accessibility report results" class="img-fluid mb-3">
+                </div>
+                <div>
+                    <p><strong>Lighthouse Report:</strong></p>
+                    <img src="Screenshot 2024-12-09 133126.png" alt="Lighthouse accessibility report results" class="img-fluid mb-3">
+                </div>
+
+                <h2>Evaluation Plan</h2>
+                <p>
+                    User testing involved 10-15 participants, including users of assistive technologies such as screen readers and keyboard-only navigation. Key metrics included task completion rates, duration, and user feedback to identify pain points and opportunities for improvement.
+                </p>
+                <p>
+                    Accessibility testing ensured compliance with WCAG 2.1 standards, using both automated tools and manual techniques like keyboard navigation and screen reader compatibility.
+                </p>
+
+                <h2>Impact</h2>
+                <p>
+                    The redesign significantly improved accessibility and usability, making the Free Library of Philadelphia homepage a more inclusive resource for all users.
+                </p>
+            </section>
+        </main>
+
         <footer class="d-flex align-items-center justify-content-center">
             <h1>Let's Connect!</h1>
             <a href="https://github.com/Harrison-Holt" aria-label="Visit Harrison's GitHub profile" title="Visit Harrison's GitHub profile">
