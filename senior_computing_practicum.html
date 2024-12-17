@@ -46,22 +46,23 @@
             <li><strong>Weeks 16-17:</strong> Final Project Presentations</li>
         </ul>
 
-        <section id="current_phase" class="mt-5">
-            <h3>Current Phase</h3>
-            <p>We are currently working on several key features for our project:</p>
+        <section id="final_phase" class="mt-5">
+            <h3>Project Completion</h3>
+            <p>We successfully completed the Good Driver Incentive Program project, delivering a fully functional web application that met all requirements and exceeded expectations. Our final demo showcased all key features, and we received an <strong>A grade</strong> for the project.</p>
             <ul>
-                <li>Implementing order confirmation emails using AWS SES.</li>
-                <li>Creating a user reviews feature for catalog items.</li>
-                <li>Allowing drivers to add items to their catalog and purchase with points.</li>
-                <li>Setting up notifications for drivers to alert them when points are spent or added.</li>
-                <li>Allowing drivers to view their profile and see purchase history.</li>
-                <li>Adding tabs for tracking future purchases.</li>
+                <li>Implemented order confirmation emails using AWS SES.</li>
+                <li>Added a user reviews feature for catalog items.</li>
+                <li>Enabled drivers to add items to their catalog and purchase with points.</li>
+                <li>Set up real-time notifications for drivers to alert them when points are spent or added.</li>
+                <li>Developed driver profile management with purchase history tracking.</li>
+                <li>Integrated future purchase tracking with dedicated tabs.</li>
             </ul>
             <div class="progress-container">
-                <div class="progress-bar"></div>
+                <div class="progress-bar" style="width: 100%; background-color: #28a745;"></div>
             </div>
-            <p>Progress: Week 11 of 17</p>
+            <p><strong>Project Status:</strong> Completed Successfully</p>
         </section>
+        
 
         <section id="release_plan" class="mt-5">
             <h3>Release Plan</h3>
@@ -105,38 +106,101 @@
                 <li>I have been the sole developer working on the catalog integration so far. Initially, I used the eBay API for our product catalog, but due to the complexity and frustration of working with their API keys, I switched to using iTunes' public API, which simplified our catalog implementation.</li>
             </ul>
         
-            <h4 class="mt-4"><i class="fas fa-exclamation-triangle" style="color: #dc3545;"></i> Current Issues</h4>
-            <ul>
-                <li>We are currently facing deployment issues with AWS Amplify due to incompatibilities with some packages, causing our dev branch to not run properly. I am working on fixing these issues to get our app fully deployed again.</li>
-                <li>Our production environment is still operational, but it has not yet been updated with the latest changes.</li>
-                <li>We are struggling with merge conflicts as we attempt to combine all five of our branches into the dev branch. This has been a challenging process, but we are collaborating as a team to resolve these conflicts and move forward.</li>
-                <li>While working on the catalog integration, I encountered challenges with CORS errors and API integration issues. These have caused delays, but I am actively working on resolving them to ensure the catalog functions seamlessly and integrates fully with our system.</li>
-            </ul>
-        
             <h4 class="mt-4"><i class="fas fa-universal-access" style="color: #ffc107;"></i> Upcoming Focus: Accessibility</h4>
             <p>
-                Accessibility is a priority for our team. While we have not fully implemented these features yet, we plan to include:
+                Accessibility is a priority for our team. The features we have implemented are:
             </p>
             <ul>
                 <li>Screen reader compatibility</li>
                 <li>Customizable themes and font sizes</li>
                 <li>High contrast modes for better visibility</li>
+                <li>Greyscale Mode</li>
+                <li>Dark Mode</li>
+                <li>Audio Feedback</li>
+                <li>Zoom Level adjustment</li>
+                <li>Line Height customization</li>
+                <li>Text Alignment options</li>
+                <li>Keyboard Navigation</li>
             </ul>
-            <p>These features will be implemented in later sprints to ensure our application is accessible to all users, including those with disabilities.</p>
+            <p>These features has been implemented in to ensure our application is accessible to all users, including those with disabilities.</p>
         </section>
         
         
         
+        <section id="technical_implementation" class="mt-5">
+            <h3><i class="fas fa-cogs"></i> Technical Implementation</h3>
+            
+            <h4>AWS RDS</h4>
+            <p>We used <strong>AWS RDS with MySQL</strong> to securely store and manage all driver, sponsor, and catalog data.</p>
+            <figure>
+                <img src="rds.png" alt="AWS RDS Instance" class="img-fluid mb-3" style="border: 1px solid #ccc; border-radius: 8px;">
+                <figcaption>RDS Instance Configuration</figcaption>
+            </figure>
+            
+            <h4>AWS API Gateway</h4>
+            <p>API Gateway manages our backend endpoints, routing requests between the front end and AWS Lambda.</p>
+            <figure>
+                <img src="gateway.png" alt="AWS API Gateway" class="img-fluid mb-3" style="border: 1px solid #ccc; border-radius: 8px;">
+                <figcaption>API Gateway Resource Endpoints</figcaption>
+            </figure>
+            
+            <h4>AWS Lambda</h4>
+            <p>Lambda functions serve as our serverless backend, handling business logic and database queries.</p>
+            <figure>
+                <img src="lambda.png" alt="AWS Lambda Functions" class="img-fluid mb-3" style="border: 1px solid #ccc; border-radius: 8px;">
+                <figcaption>Lambda Functions List</figcaption>
+            </figure>
+            
+            <h4>Amazon Cognito</h4>
+            <p>Cognito ensures secure authentication and authorization for all user roles.</p>
+            <figure>
+                <img src="cognito.png" alt="Amazon Cognito" class="img-fluid mb-3" style="border: 1px solid #ccc; border-radius: 8px;">
+                <figcaption>User Management via Amazon Cognito</figcaption>
+            </figure>
         
+            <h4>AWS Amplify</h4>
+            <p>AWS Amplify was used for hosting and continuous deployment of the frontend, integrating seamlessly with the backend services.</p>
+            <figure>
+                <img src="aws.png.png" alt="AWS Amplify Dashboard" class="img-fluid mb-3" style="border: 1px solid #ccc; border-radius: 8px;">
+                <figcaption>Amplify Hosting and Deployment Dashboard</figcaption>
+            </figure>
+        </section>
         
         
 
         <hr class="my-divider">
 
-        <!-- Placeholder for Demo -->
-        <section id="demo" class="mt-5">
-            <h3><i class="fas fa-video demo-icon"></i> Final Demo</h3>
-            <p>Videos and pictures of the final project will be showcased here upon completion. Stay tuned for the final demo on December 13, 2024</p>
+       
+        <section id="project_screenshots" class="mt-5">
+            <h3><i class="fas fa-images"></i> Project Screenshots</h3>
+            <p>Below are screenshots showcasing key features of the web application:</p>
+            <div class="row g-3">
+                <div class="col-12 col-md-6">
+                    <div class="screenshot-card d-flex flex-column align-items-center">
+                        <img src="home.png" alt="Web App Home Screen" class="img-fluid mb-2">
+                        <p class="text-center">Web App Home Screen</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="screenshot-card d-flex flex-column align-items-center">
+                        <img src="settings.png" alt="Accessibility Settings Screen" class="img-fluid mb-2">
+                        <p class="text-center">Accessibility Settings Screen</p>
+                    </div>
+                </div>
+                <div class="row g-3">
+                    <div class="col-12 col-md-6">
+                        <div class="screenshot-card d-flex flex-column align-items-center">
+                            <img src="faq.png" alt="Web App Home Screen" class="img-fluid mb-2">
+                            <p class="text-center">FAQ Screen</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="screenshot-card d-flex flex-column align-items-center">
+                            <img src="applications.png" alt="Accessibility Settings Screen" class="img-fluid mb-2">
+                            <p class="text-center">Applications Screen</p>
+                        </div>
+                    </div>
+            </div>
         </section>
     </section>
 
