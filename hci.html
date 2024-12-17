@@ -3,11 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Harrison Holt's Frontend Portfolio</title>
+        <title>HCI Redesign Task</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
         <link rel="stylesheet" href="project_desc.css">
-        <link rel="stylesheet" href="hci.css">
     </head>
     <body>
         <header class="shadow mb-3 p-3 d-flex flex-row align-items-center justify-content-between">
@@ -18,36 +17,65 @@
                 </nav>
             </div>
         </header>
-        <section id="sixth_project" class="container my-5">
-            <h1>HCI Redesign Task</h1>
-            <p class="mt-5">This project is part of the course CPSC 4140 - Human and Computer Interaction. It will be completed in a group of 5 members. The page will be updated as we finish each phase/milestone. Stay tuned for updates!</p>
-        
-            <h3>Assignments and Deadlines</h3>
-            <p>The project includes the following parts:</p>
-            <ul>
-                <li><strong>A0:</strong> Project Proposal - Sep 11</li>
-                <li><strong>A1:</strong> Contextual Design - Oct 9</li>
-                <li><strong>A2:</strong> Ideation and Requirements - Oct 28</li>
-                <li><strong>A3:</strong> Interaction Analysis and Design - Nov 11</li>
-                <li><strong>A4:</strong> Design Critique - Nov 18</li>
-                <li><strong>A5:</strong> Think Aloud Testing - Nov 25</li>
-                <li><strong>Poster Presentation:</strong> Poster Design and Presentation - Dec 4</li>
-            </ul>
+        <main class="container my-5">
+            <section id="third_project">
+                <h1>HCI Redesign Task</h1>
+                <p>This project was completed as part of <strong>CPSC 4140 - Human-Computer Interaction</strong> in a group of five members. The project focused on redesigning a live bus tracking app to improve usability and accessibility for students and commuters.</p>
+                
+                <h2>Project Goals</h2>
+                <ul>
+                    <li>Improve real-time bus tracking and scheduling features.</li>
+                    <li>Enhance the user interface for first-time users.</li>
+                    <li>Address commuter frustrations like inaccurate updates and unclear notifications.</li>
+                </ul>
+                
+                <h2>A0: Project Proposal</h2>
+                <p><strong>App Goal:</strong> Enhance Clemson commuter convenience by integrating multiple services related to bus usage.</p>
+                <p><strong>Key Features:</strong></p>
+                <ul>
+                    <li>Accurate real-time bus information.</li>
+                    <li>Stress-free user experience through notifications and updates.</li>
+                    <li>Details on bus timing, capacity, and availability.</li>
+                </ul>
+                <p><strong>Current Solutions (Transloc):</strong> Existing apps like Transloc are usable but not user-friendly. Key issues include unreliable tracking, poor navigation, and limited notification functionality.</p>
+                <a href="A0_Final.pdf" class="btn btn-primary my-2">Download A0: Project Proposal</a>
 
-            <h3 class="mt-5">Potential Project Topics</h3>
-            <h4 class="mt-4">Task 1: Commuter Apps (Live Bus Tracking)</h4>
-            <p><strong>Goal:</strong> Improve Clemson commuter convenience by integrating multiple services into one application.</p>
-            <p><strong>Current Solutions:</strong> Tiger Commute and Translog.</p>
-            <p><strong>User Research:</strong> Survey Clemson public transit users to prototype our site.</p>
+                <h2>A1: Contextual Design</h2>
+                <p>We analyzed user frustrations with the existing wireframe and conducted contextual research to identify specific areas of improvement. Through surveys and interviews, the following issues were identified:</p>
+                <ul>
+                    <li><strong>Navigation Complexity:</strong> Users struggled to find relevant information quickly.</li>
+                    <li><strong>Inconsistent Real-Time Updates:</strong> Delays in live bus tracking led to user confusion.</li>
+                    <li><strong>Notification Overload:</strong> Notifications were frequent but lacked clarity and actionable insights.</li>
+                    <li><strong>Overcrowded Visuals:</strong> Excessive information cluttered the interface, overwhelming users.</li>
+                </ul>
+                <p>From these findings, we created improved wireframes and designs with a focus on clear, concise information presentation and usability improvements.</p>
+                <a href="Assignment-1_Group-6.pdf" class="btn btn-primary my-2">Download A1: Contextual Design Report</a>
+                
+                <h2>Phase 2: Interaction Analysis & Design</h2>
+                <h3>Generalized Transition Network (GTN)</h3>
+                <p>We developed a flowchart of user interactions to ensure seamless navigation through the app:</p>
+                <p>Key pages include Home, Routes, Notifications, and Settings.</p>
+                <a href="Assignment_3.pdf" class="btn btn-primary my-2">Read Interaction Analysis</a>
+                
+                
+                <h2>Phase 3: Think-Aloud Testing</h2>
+                <p>We conducted think-aloud usability testing to identify areas for improvement. Key feedback:</p>
+                <ul>
+                    <li>Improved navigation clarity with bottom bar icons.</li>
+                    <li>Added legend and labels for better route visuals.</li>
+                </ul>
+                
+                <h3>Working Prototype</h3>
+                <p>We developed a clickable prototype in Figma, which was used during our think-aloud testing phase. Explore the prototype using the link below:</p>
+                <a href="https://www.figma.com/proto/0cW2DOMTMYtR75mUD1Py4w/Wireframe-(Copy)?node-id=1-23&p=f&t=4u0H0cJPLzVsi2UN-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=98%3A627" class="btn btn-primary my-2" target="_blank">View Prototype</a>
 
-            <h4 class="mt-4">Task 2: Parking Lot Tracker (Open Access Parking Lots)</h4>
-            <p><strong>Goal:</strong> Track available parking spaces in open-access parking lots.</p>
-            <p><strong>Current Solution:</strong> Park Hero.</p>
-            <p><strong>User Research:</strong> Survey college students to assess the feasibility of implementing a multi-layer parking garage.</p>
-
-            <h3 class="mt-4">Final Decision</h3>
-            <p>We will select the final topic based on feasibility, impact, and feedback from our teacher, and update this section once the decision is finalized.</p>
-        </section>
+                <h2>Final Reflection</h2>
+                <p>Our redesign prioritized intuitive navigation, accurate updates, and improved accessibility to create a seamless commuter experience.</p>
+                
+                <h3>Final Report</h3>
+                <a href="Assignment_5.pdf" class="btn btn-primary my-2">Download Final Report</a>
+            </section>
+        </main>
         
         <footer class="d-flex align-items-center justify-content-center">
             <h1>Let's Connect!</h1>
@@ -64,3 +92,4 @@
         <script src="mode.js"></script>
     </body>
 </html>
+
