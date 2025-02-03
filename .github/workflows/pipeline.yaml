@@ -17,7 +17,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Install Pa11y
-        run: npm install -g pa11y
+        run: npm install -g pa11y-ci
 
       - name: Run Pa11y Tests
         run: |
