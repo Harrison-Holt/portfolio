@@ -3,4 +3,10 @@
       "enabled": false
     }
   }
+  {
+    "public": "HTML",
+    "routes": [
+      { "src": "/(.*)", "dest": "/HTML/$1" }
+    ]
+  }
   
