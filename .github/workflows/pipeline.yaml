@@ -20,7 +20,7 @@ jobs:
         run: npm install -g pa11y
 
       - name: Run Pa11y Tests
-        run: pa11y https://harrisonholt.dev/index.html
+        run: pa11y https://www.harrisonholt.dev/index.html
 
   deploy:
     runs-on: ubuntu-latest
