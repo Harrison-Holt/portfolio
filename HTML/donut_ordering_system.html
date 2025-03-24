@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Donut Ordering System | Harrison Holt</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+        <link rel="stylesheet" href="project_desc.css">
+    </head>
+    <body>
+        <header class="shadow mb-3 p-3 d-flex flex-row align-items-center justify-content-between">
+            <h1 class="m-0">Harrison Holt</h1>
+            <div class="portfolio_sections">
+                <nav>
+                    <a href="index.html">Home</a>
+                </nav>
+            </div>
+        </header>
+
+        <section id="donut_project" class="container my-5">
+            <h3>Donut Ordering System (AWS Serverless)</h3>
+            <p class="mt-2"><strong>Description:</strong><br>
+                The Donut Ordering System is a fully serverless application built to process donut orders using AWS services. It supports real-time order submission, wait time estimation, receipt generation, and customer email confirmations using an event-driven architecture.
+            </p>
+
+            <h3><i class="fas fa-pencil-ruler planning-icon me-2"></i> My Design Process</h3>
+            <p>The system was designed for scalability and modularity, with a clear focus on using managed services to minimize infrastructure overhead. I used diagrams and flowcharts to plan each service interaction before building and deploying.
+            </p>
+
+            <h4>Color Palette</h4>
+            <p>The branding uses warm, friendly tones reminiscent of donut shops. These colors enhance user trust and engagement.</p>
+            <div class="color-swatch" style="background-color: #FDF3E7;"></div> <p>#FDF3E7 (Cream)</p>
+            <div class="color-swatch" style="background-color: #8D5524;"></div> <p>#8D5524 (Chocolate Brown)</p>
+            <div class="color-swatch" style="background-color: #F7C59F;"></div> <p>#F7C59F (Frosted Peach)</p>
+
+            <hr class="my-divider">
+
+            <h3 class="mt-5"><i class="fas fa-server server-icon"></i> Technology Stack</h3>
+            <ul>
+                <li><strong>AWS Lambda:</strong> Handles business logic for order processing and email generation.</li>
+                <li><strong>API Gateway:</strong> Accepts HTTP requests from clients.</li>
+                <li><strong>DynamoDB:</strong> Stores order data and inventory.</li>
+                <li><strong>Step Functions:</strong> Manages the order workflow including wait time calculation and confirmation.</li>
+                <li><strong>S3:</strong> Hosts downloadable order receipts.</li>
+                <li><strong>SES (Simple Email Service):</strong> Sends order confirmation emails with pre-signed receipt URLs.</li>
+                <li><strong>CodePipeline + CodeBuild + CodeDeploy:</strong> Used to automate CI/CD for backend code updates.</li>
+            </ul>
+
+            <h3 class="mt-5"><i class="fas fa-code coding-icon me-2"></i> My Coding Process</h3>
+            <p>I wrote modular Lambda functions using ES6, implemented security best practices like scoped IAM roles, and used Postman collections to test API responses. I used CloudWatch Logs and Alarms for debugging and monitoring. The pipeline automatically runs tests and deploys updates to production.</p>
+
+            <section id="accessibility_in_coding" class="mt-5">
+                <h3><i class="fas fa-universal-access accessibility-icon"></i> Accessibility in My Coding Process</h3>
+                <p>Although this project is backend-focused, I ensured that any frontend components (admin dashboard or receipt pages) adhered to WCAG standards. I ran Lighthouse and used screen readers and keyboard testing for any public UI pages.</p>
+            </section>
+
+            <a href="https://github.com/harrison-holt/donut-ordering-system" class="btn btn-primary mt-2" target="_blank">View Project on GitHub</a>
+        </section>
+
+        <footer class="d-flex align-items-center justify-content-center">
+            <h1>Let's Connect!</h1>
+            <a href="https://github.com/Harrison-Holt" aria-label="Visit Harrison's GitHub profile" title="Visit Harrison's GitHub profile">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/harrison-holt-18a703202" aria-label="Visit Harrison's LinkedIn profile" title="Visit Harrison's LinkedIn profile">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:hholt2901@gmail.com" aria-label="Send an email to Harrison" title="Send an email to Harrison">
+                <i class="fa fa-envelope"></i>
+            </a>
+        </footer>
+
+        <script src="mode.js"></script>
+    </body>
+</html>

@@ -1,37 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harrison Holt's Frontend Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="project_desc.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To-Do List App | Harrison Holt</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <link rel="stylesheet" href="project_desc.css" />
 </head>
 <body>
     <header class="shadow mb-3 p-3 d-flex flex-row align-items-center justify-content-between">
         <h1 class="m-0">Harrison Holt</h1>
-        <div class="portfolio_sections">
-            <nav>
-                <a href="index.html">Home</a>
-            </nav>
-        </div>
+        <nav>
+            <a href="index.html">Home</a>
+        </nav>
     </header>
-    
-    <section id="second_project">
+
+    <section id="second_project" class="container my-5">
         <h3>To-Do List App</h3>
         <p class="mt-2">
-            <strong>Description:</strong><br>
-            This To-Do List App is a practical demonstration of my foundational skills in web development. As one of my initial projects, it involves utilizing HTML, CSS, vanilla JavaScript, and Bootstrap for responsive design. The app allows users to add, manage, and prioritize tasks effectively, showcasing my ability to build functional, user-friendly web interfaces.
+            <strong>Description:</strong><br />
+            This To-Do List App demonstrates both my frontend development and backend AWS cloud engineering skills. It allows users to add, manage, and prioritize tasks through a responsive UI, while the backend is powered by a secure, scalable, serverless AWS architecture.
         </p>
-        
-        <h3><i class="fas fa-pencil-ruler planning-icon me-2"></i> My Design Process</h3>
+
+        <h3><i class="fas fa-pencil-ruler me-2"></i> My Design Process</h3>
         <p>
-            I focused on a clean, minimalist design to ensure straightforward functionality. The redesigned interface emphasizes task management, removing complex decorative elements to enhance usability. Figma was used for wireframing and mockups, guiding the development process towards a professional and user-friendly design.
+            I focused on a clean, minimalist layout to keep the interface intuitive and user-friendly. I created a wireframe and mockup in Figma to guide the visual design and structure.
         </p>
 
         <h4>Color Palette</h4>
-        <p>The color palette reflects a minimalist aesthetic with functional color coding for different task statuses:</p>
         <div class="color-swatch" style="background-color: #0A0A0A;"></div> <p>#0A0A0A (Dark Background)</p>
         <div class="color-swatch" style="background-color: #DC3545;"></div> <p>#DC3545 (Tasks Past Due)</p>
         <div class="color-swatch" style="background-color: #FFC107;"></div> <p>#FFC107 (Tasks Due Today)</p>
@@ -52,53 +49,51 @@
         <section id="design_changes" class="mt-5">
             <h3>Design Evolution</h3>
             <p>
-                Initially designed with a bulletin board concept, the app has evolved into a sleek, professional tool focused on task management. The redesign prioritizes usability, reducing visual clutter and enhancing functionality. Icons were added for clarity, and responsiveness was improved to ensure seamless usage across devices.
+                Originally inspired by a bulletin board concept, the app evolved into a sleek, professional task manager focused on usability and accessibility. I simplified the layout, added semantic HTML, and improved responsive behavior.
             </p>
         </section>
 
-        <hr class="my-divider">          
+        <hr class="my-divider" />
 
-        <h3 class="mt-5"><i class="fas fa-server server-icon"></i> Technology Stack</h3>
-        <p>For the development of the To-Do List App, I used the following technologies:</p>
+        <h3 class="mt-5"><i class="fas fa-server me-2"></i> Technology Stack</h3>
+        <p>This project uses a full-stack architecture powered by AWS services and modern web development tools:</p>
         <ul>
-            <li><strong>HTML & CSS:</strong> Used for structuring and styling the app, with a focus on clean and semantic code.</li>
-            <li><strong>Bootstrap:</strong> Employed for its responsive grid system and components, making the app adaptable to various screen sizes.</li>
-            <li><strong>JavaScript:</strong> Leveraged for dynamic functionality, such as task management and date handling, without the use of frameworks.</li>
-            <li><strong>Neon Database:</strong> Used as the backend database service for managing tasks.</li>
-            <li><strong>Node.js:</strong> Serves as the backend server, handling API requests and data processing.</li>
-            <li><strong>Figma:</strong> Utilized for wireframing and creating the design mockup, guiding the visual and structural layout of the app.</li>
-            <li><strong>Ninja Quotes API:</strong> Used to fetch motivational quotes dynamically, adding an inspirational element to the user's daily tasks.</li>
-            <li><strong>Version Control:</strong> Managed with Git and GitHub, ensuring efficient tracking of changes and collaboration.</li>
+            <li><strong>HTML, CSS & JavaScript:</strong> Used for building the responsive frontend interface.</li>
+            <li><strong>Bootstrap:</strong> For responsive design and component styling.</li>
+            <li><strong>Amazon API Gateway:</strong> Manages RESTful API endpoints, secured with Cognito authorizers.</li>
+            <li><strong>AWS Lambda (Public & Private):</strong> Used for business logic. Private Lambda functions run in a VPC to securely interact with the database.</li>
+            <li><strong>Amazon RDS (PostgreSQL):</strong> Stores tasks in a secure VPC-enabled database.</li>
+            <li><strong>Amazon Cognito:</strong> Provides secure user authentication and token validation.</li>
+            <li><strong>Amazon EC2 (Bastion Host):</strong> Used to access the RDS instance within the private subnet.</li>
+            <li><strong>Figma:</strong> For visual prototyping and wireframe creation.</li>
+            <li><strong>Git & GitHub:</strong> Used for version control and collaborative updates.</li>
         </ul>
 
-        <h3 class="mt-5"><i class="fas fa-code coding-icon me-2"></i> My Coding Process</h3>
+        <h3 class="mt-5"><i class="fas fa-code me-2"></i> My Coding Process</h3>
         <p>
-            This project allowed me to deepen my understanding of HTML, CSS, and JavaScript functionalities. I integrated Bootstrap to utilize its responsive design features, focusing on a user-centric approach with a functional and straightforward interface. Challenges included dynamic HTML generation and handling date operations in JavaScript, further enhancing my coding skills.
+            I built the backend using a secure, serverless AWS architecture. API Gateway routes requests to Lambda functions (some public, some private within a VPC), and those interact with a private RDS PostgreSQL instance. 
+            A bastion EC2 host is used to access and monitor the database. On the frontend, I implemented dynamic task features with JavaScript, designed clean UI with Bootstrap, and deployed the final product with full accessibility and responsive support.
         </p>
 
         <section id="accessibility_in_coding" class="mt-5">
-            <h3><i class="fas fa-universal-access accessibility-icon"></i> Accessibility in my Coding Process</h3>
+            <h3><i class="fas fa-universal-access me-2"></i> Accessibility in My Coding Process</h3>
             <p>
-                Committed to accessibility, I ensured the app meets WCAG 2.0 standards through testing with NVDA screen reader and AXE extension. My process included detailed documentation of accessibility testing, reinforcing my dedication to inclusivity in web design.
+                I ensured the app meets WCAG 2.0 standards by using semantic HTML, testing with the NVDA screen reader, and running automated checks using Axe and Lighthouse. The app supports keyboard navigation and color contrast compliance.
             </p>
         </section>
-        
-        <a href="https://github.com/harrison-holt/Interactive_To_Do_List_App" class="btn btn-primary mt-2" target="_blank">View Project on GitHub</a>
-        <a href="https://todolist.harrisonholt.dev/" class="btn btn-primary mt-2">Live Demo</a>          
+
+        <a href="https://github.com/harrison-holt/Interactive_To_Do_List_App" class="btn btn-primary mt-3" target="_blank">View Project on GitHub</a>
+        <a href="https://todolist.harrisonholt.dev/" class="btn btn-primary mt-3">Live Demo</a>
     </section>
-    
-    <footer class="d-flex align-items-center justify-content-center">
-        <h1>Let's Connect!</h1>
-        <a href="https://github.com/Harrison-Holt" aria-label="Visit Harrison's GitHub profile" title="Visit Harrison's GitHub profile">
-            <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/harrison-holt-18a703202" aria-label="Visit Harrison's LinkedIn profile" title="Visit Harrison's LinkedIn profile">
-            <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="mailto:hholt2901@gmail.com" aria-label="Send an email to Harrison" title="Send an email to Harrison">
-            <i class="fa fa-envelope"></i>
-        </a>
+
+    <footer class="d-flex align-items-center justify-content-center mt-5">
+        <h1 class="me-3">Let's Connect!</h1>
+        <a href="https://github.com/Harrison-Holt" title="GitHub"><i class="fab fa-github fa-lg me-3"></i></a>
+        <a href="https://www.linkedin.com/in/harrison-holt-18a703202" title="LinkedIn"><i class="fab fa-linkedin fa-lg me-3"></i></a>
+        <a href="mailto:hholt2901@gmail.com" title="Email"><i class="fa fa-envelope fa-lg"></i></a>
     </footer>
+
     <script src="mode.js"></script>
 </body>
 </html>
+

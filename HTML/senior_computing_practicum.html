@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harrison Holt's Frontend Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="project_desc.css">
     <link rel="stylesheet" href="senior_computing_practicum.css">
@@ -18,111 +18,89 @@
             </nav>
         </div>
     </header>
+
     <section id="sixth_project">
         <h3>The Good Driver Incentive Program</h3>
-        <p class="mt-2">This Project will be completed in the Course CPSC 4910- Senior Computing Practicum. This project will be completed in a group of 5 members. This page will be updated as we finish each phase/milestone. Stay Tuned for updates!</p>
+        <p class="mt-2">
+            This project was completed as part of CPSC 4910 – Senior Computing Practicum. Our 5-person team worked in one-week Agile sprints over 16 weeks, guided by a faculty member acting as our client. I served as the team's Scrum Master, facilitating design and check-in meetings weekly. The project culminated in a full class-wide load test with over 70 users.
+        </p>
 
-        
         <section class="project_description mt-5">
             <h3>Project Description</h3>
             <p class="mt-2">
-                The Good Driver Incentive Program is a web application that encourages better driving behaviors among truck drivers by awarding points for positive actions. These points can be redeemed for products in a sponsor-managed catalog. 
+                The Good Driver Incentive Program is a web application that encourages better driving behaviors among truck drivers by awarding points for positive actions. These points can be redeemed for products in a sponsor-managed catalog.
             </p>
-            <p>
-                <strong>Drivers:</strong> can log in to the system, view and update their profiles, track their points, and browse their sponsor's catalog to redeem points for rewards. They can also view the status of their purchases and manage their orders.
-            </p>
-            <p>
-                <strong>Sponsor Users:</strong> oversee the drivers and manage the incentive programs. They can log in to review and update their own profiles, manage driver applications, approve or reject drivers, and adjust points based on driver performance. They also manage the product catalog by integrating with APIs for up-to-date product information, including prices and availability. Sponsors can assume the role of a driver to see the system from the driver's perspective, ensuring the program runs smoothly.
-            </p>
-            <p>
-                <strong>Admin Users:</strong> have the highest level of control, managing both sponsor and driver accounts. They can review and update profiles for all user types, handle security aspects like password resets, and monitor significant system events through audit logs. Admins ensure the overall integrity and security of the system by managing access, handling escalations, and generating detailed reports that track points, purchases, and system usage across all users.
-            </p>
+            <p><strong>Drivers:</strong> View/update profiles, track points, redeem rewards, and manage orders.</p>
+            <p><strong>Sponsor Users:</strong> Oversee drivers, manage applications, adjust points, and maintain the product catalog through API integration. They can also view the system from a driver's perspective.</p>
+            <p><strong>Admin Users:</strong> Manage all accounts, security settings, audit logs, and system-wide reporting.</p>
         </section>
 
         <h3 class="mt-5"><i class="fas fa-pencil-ruler planning-icon"></i> Project Timeline</h3>
         <ul>
-            <li><strong>Weeks 1-3:</strong> Team Selection, Project Planning & Development Setup</li>
-            <li><strong>Weeks 4-15:</strong> Work in a team environment with minimal supervision. Plan, Code & Test using Agile Project Management</li>
-            <li><strong>Weeks 16-17:</strong> Final Project Presentations</li>
+            <li><strong>Weeks 1–3:</strong> Team formation, project planning, and setup</li>
+            <li><strong>Weeks 4–15:</strong> Development and testing using Agile methodology</li>
+            <li><strong>Weeks 16–17:</strong> Final demos and presentations</li>
         </ul>
 
         <section id="final_phase" class="mt-5">
             <h3>Project Completion</h3>
-            <p>We successfully completed the Good Driver Incentive Program project, delivering a fully functional web application that met all requirements and exceeded expectations. Our final demo showcased all key features, and we received an <strong>A grade</strong> for the project.</p>
+            <p>We successfully delivered a fully functional and accessible web application. The final demo was a success, and the project earned an <strong>A grade</strong>.</p>
             <ul>
-                <li>Implemented order confirmation emails using AWS SES.</li>
-                <li>Added a user reviews feature for catalog items.</li>
-                <li>Enabled drivers to add items to their catalog and purchase with points.</li>
-                <li>Set up real-time notifications for drivers to alert them when points are spent or added.</li>
-                <li>Developed driver profile management with purchase history tracking.</li>
-                <li>Integrated future purchase tracking with dedicated tabs.</li>
+                <li>Integrated AWS SES for order confirmations</li>
+                <li>Implemented user reviews in the catalog</li>
+                <li>Allowed drivers to purchase items with points</li>
+                <li>Built real-time point update notifications</li>
+                <li>Developed driver profile management and order tracking</li>
             </ul>
             <div class="progress-container">
                 <div class="progress-bar" style="width: 100%; background-color: #28a745;"></div>
             </div>
             <p><strong>Project Status:</strong> Completed Successfully</p>
         </section>
-        
 
         <section id="release_plan" class="mt-5">
             <h3>Release Plan</h3>
-            <p>For a detailed view of the projected release plan, you can <a href="https://drive.google.com/file/d/1vogVlN0882ZQ7oCol7TIHWrQ0WXvx7H9/view?usp=sharing" target="_blank">view the Release Plan here</a>. This document contains the full plan of what features will be completed in each sprint.</p>
-        </section>        
+            <p>See our full sprint breakdown in the <a href="https://drive.google.com/file/d/1vogVlN0882ZQ7oCol7TIHWrQ0WXvx7H9/view?usp=sharing" target="_blank">Release Plan</a>.</p>
+        </section>
 
         <section class="tech_stack mt-5">
             <h3><i class="fas fa-server server-icon"></i> Technology Stack</h3>
             <ul>
                 <li><strong>Hosting:</strong> AWS Amplify</li>
-                <li><strong>Database:</strong> AWS RDS with MySQL</li>
-                <li><strong>Database Management:</strong> MySQL Workbench</li>
-                <li><strong>Back-End:</strong> Node.js, AWS Lambda</li>
-                <li><strong>Front-End:</strong> React, Vite, TypeScript, and Material UI</li>
-                <li><strong>Version Control:</strong> Git</li>
+                <li><strong>Database:</strong> AWS RDS (MySQL)</li>
+                <li><strong>Backend:</strong> AWS Lambda, Node.js</li>
+                <li><strong>Frontend:</strong> React, Vite, TypeScript, Material UI</li>
+                <li><strong>Authentication:</strong> Amazon Cognito</li>
                 <li><strong>Project Management:</strong> Azure DevOps</li>
-                <li><strong>API Testing:</strong> Postman</li>
-                <li><strong>Debugging:</strong> AWS CloudWatch</li>
-                <li><strong>Email Service:</strong> AWS SES</li>
+                <li><strong>Version Control:</strong> Git</li>
+                <li><strong>Testing:</strong> Postman, AWS CloudWatch</li>
             </ul>
         </section>
-        
-        
 
         <section id="user_stories" class="mt-5">
             <h3>User Stories</h3>
-            <p>For a detailed list of all user stories, please <a href="https://docs.google.com/document/d/1fvX0WAWcdYN3lu-Eryomx1D5q44E_jK0eplCg7NDXGY/edit?usp=sharing" target="_blank">view the User Stories Document</a>. This document contains over 350 user stories outlining key features and functionality for the project.</p>
+            <p>Explore all <a href="https://docs.google.com/document/d/1fvX0WAWcdYN3lu-Eryomx1D5q44E_jK0eplCg7NDXGY/edit?usp=sharing" target="_blank">350+ user stories</a> that guided our development sprints.</p>
         </section>
-        
+
         <hr class="my-divider">
 
         <section id="coding_testing" class="mt-5">
             <h3><i class="fas fa-code" style="color: #007bff;"></i> Coding and Testing</h3>
-        
-            <p>Throughout this project, I have focused on several key areas:</p>
-        
             <ul>
-                <li>Building and deploying AWS Lambda functions to handle backend processes like catalog management and user authentication.</li>
-                <li>Setting up AWS API Gateway to connect the front-end with our serverless backend infrastructure.</li>
-                <li>Implementing AWS SES to send order confirmation emails as part of our e-commerce workflow.</li>
-                <li>I have been the sole developer working on the catalog integration so far. Initially, I used the eBay API for our product catalog, but due to the complexity and frustration of working with their API keys, I switched to using iTunes' public API, which simplified our catalog implementation.</li>
+                <li>Developed all backend logic via AWS Lambda</li>
+                <li>Managed API routes using AWS API Gateway</li>
+                <li>Integrated AWS SES for transactional emails</li>
+                <li>Handled catalog integration (initially with eBay API, later streamlined using iTunes API)</li>
             </ul>
-        
-            <h4 class="mt-4"><i class="fas fa-universal-access" style="color: #ffc107;"></i> Upcoming Focus: Accessibility</h4>
-            <p>
-                Accessibility is a priority for our team. The features we have implemented are:
-            </p>
+
+            <h4 class="mt-4"><i class="fas fa-universal-access" style="color: #ffc107;"></i> Accessibility Features</h4>
             <ul>
                 <li>Screen reader compatibility</li>
-                <li>Customizable themes and font sizes</li>
-                <li>High contrast modes for better visibility</li>
-                <li>Greyscale Mode</li>
-                <li>Dark Mode</li>
-                <li>Audio Feedback</li>
-                <li>Zoom Level adjustment</li>
-                <li>Line Height customization</li>
-                <li>Text Alignment options</li>
-                <li>Keyboard Navigation</li>
+                <li>Keyboard navigation</li>
+                <li>Dark mode, high contrast, grayscale mode</li>
+                <li>Font size, line height, and zoom adjustments</li>
+                <li>Text alignment options and audio feedback</li>
             </ul>
-            <p>These features has been implemented in to ensure our application is accessible to all users, including those with disabilities.</p>
         </section>
         
         
