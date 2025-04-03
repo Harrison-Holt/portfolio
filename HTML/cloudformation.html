@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CloudFormation Templates | Harrison Holt</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="project_desc.css">
+    <link rel="stylesheet" href="senior_computing_practicum.css">
+</head>
+<body>
+    <header class="shadow mb-3 p-3 d-flex flex-row align-items-center justify-content-between">
+        <h1 class="m-0">Harrison Holt</h1>
+        <div class="portfolio_sections">
+            <nav>
+                <a href="index.html">Home</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="third_project">
+        <h3>CloudFormation Infrastructure Templates</h3>
+        <p class="mt-2">
+            This page showcases a series of AWS CloudFormation templates I wrote from scratch to provision secure, scalable infrastructure. These templates were built as part of my DevOps learning journey and reflect production-level practices such as Origin Access Identity (OAI), secure S3 bucket policies, and automated deployments.
+        </p>
+
+        <section class="project_description mt-5">
+            <h3>Featured Template: Static Website with S3 & CloudFront</h3>
+            <p class="mt-2">
+                This template provisions a private S3 bucket, a CloudFront distribution with Origin Access Identity (OAI), and a secure bucket policy. It enables global, HTTPS-accessible static site hosting with fine-grained access control.
+            </p>
+            <p><strong>Key Services:</strong> S3, CloudFront, OAI, BucketPolicy</p>
+            <p><strong>Live Demo:</strong> <a href="https://d1n6bcb0b174if.cloudfront.net" target="_blank">View Deployed Site</a></p>
+            <p><strong>GitHub Repository:</strong> <a href="https://github.com/Harrison-Holt/CloudFormation_Projects" target="_blank">Static Site Template</a></p>
+        </section>
+
+        <h3 class="mt-5"><i class="fas fa-bug"></i> Challenges Solved</h3>
+        <ul>
+            <li>Resolved a <code>CREATE_FAILED</code> error by using <code>DependsOn</code> to ensure the S3 bucket was created before the policy applied</li>
+            <li>Corrected bucket policy <code>Resource</code> to use <code>/*</code> to grant object-level access</li>
+            <li>Validated deployment via CloudFormation Events tab and CloudFront URL</li>
+        </ul>
+
+        <section class="tech_stack mt-5">
+            <h3><i class="fas fa-toolbox"></i> Technologies & Services</h3>
+            <ul>
+                <li><strong>Infrastructure as Code:</strong> AWS CloudFormation (YAML)</li>
+                <li><strong>Storage:</strong> Amazon S3 (private buckets, website hosting)</li>
+                <li><strong>Content Delivery:</strong> AWS CloudFront (global edge delivery)</li>
+                <li><strong>Security:</strong> IAM, Origin Access Identity (OAI), S3 BucketPolicy</li>
+                <li><strong>Monitoring:</strong> CloudFormation Stack Events</li>
+            </ul>
+        </section>
+
+        <section id="template_roadmap" class="mt-5">
+            <h3>Template Roadmap</h3>
+            <p>Coming soon: additional templates including</p>
+            <ul>
+                <li>VPC with public/private subnets and NAT Gateway</li>
+                <li>EC2-based web server stack with auto-scaling</li>
+                <li>CI/CD pipeline using CodePipeline + CodeBuild</li>
+                <li>Lambda + S3 + SNS event-driven workflow</li>
+            </ul>
+        </section>
+
+        <hr class="my-divider">
+
+        <section id="template_preview" class="mt-5">
+            <h3><i class="fas fa-code"></i> Code Preview</h3>
+            <p>This is a snippet from the static website template:</p>
+<pre><code>Resources:
+  MyStaticWebsite:
+    Type: AWS::S3::Bucket
+    Properties:
+      WebsiteConfiguration:
+        IndexDocument: index.html
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
+
+  MyOAI:
+    Type: AWS::CloudFront::CloudFrontOriginAccessIdentity
+    Properties:
+      CloudFrontOriginAccessIdentityConfig:
+        Comment: Access Identity For The S3 Bucket
+
+  BucketPolicy:
+    Type: AWS::S3::BucketPolicy
+    DependsOn: MyStaticWebsite
+    Properties:
+      Bucket: 
+        Ref: MyStaticWebsite
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Effect: Allow
+            Action: s3:GetObject
+            Resource: 
+              Fn::Sub: arn:aws:s3:::${MyStaticWebsite}/*
+            Principal:
+              CanonicalUser:
+                Fn::GetAtt: [MyOAI, S3CanonicalUserId]</code></pre>
+        </section>
+
+        <section id="screenshot" class="mt-5">
+            <h3><i class="fas fa-sitemap"></i> Deployment Screenshot</h3>
+            <figure>
+                <img src="../assets/png/cloudfront-stack-success.png" alt="CloudFormation Stack Success" class="img-fluid mb-2" style="border: 1px solid #ccc; border-radius: 8px;">
+                <figcaption>CloudFormation Stack Created Successfully</figcaption>
+            </figure>
+        </section>
+    </section>
+
+    <footer class="d-flex align-items-center justify-content-center">
+        <h1>Let's Connect!</h1>
+        <a href="https://github.com/Harrison-Holt" aria-label="Visit Harrison's GitHub profile" title="Visit Harrison's GitHub profile">
+            <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/harrison-holt-18a703202" aria-label="Visit Harrison's LinkedIn profile" title="Visit Harrison's LinkedIn profile">
+            <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="mailto:hholt2901@gmail.com" aria-label="Send an email to Harrison" title="Send an email to Harrison">
+            <i class="fa fa-envelope"></i>
+        </a>
+    </footer>
+    <script src="mode.js"></script>
+</body>
+</html>

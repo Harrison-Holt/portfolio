@@ -21,66 +21,71 @@
         <section id="third_project" class="container my-5">
             <h3>Donut Ordering System (AWS Serverless)</h3>
             <p class="mt-2"><strong>Description:</strong><br>
-                The Donut Ordering System is a fully serverless application built to process donut orders using AWS services. It supports real-time order submission, wait time estimation, receipt generation, and customer email confirmations using an event-driven architecture.
+              Dough & Behold is a fully serverless web application that lets customers place donut orders online and receive confirmation and pickup updates via email. Built with AWS services and React, this project demonstrates a real-time, event-driven ordering workflow that simulates a modern digital storefront.
             </p>
-
+          
             <h3><i class="fas fa-pencil-ruler planning-icon me-2"></i> My Design Process</h3>
-            <p>The system was designed for scalability and modularity, with a clear focus on using managed services to minimize infrastructure overhead. I used diagrams and flowcharts to plan each service interaction before building and deploying.
+            <p>I planned the system architecture with AWS Step Functions at the core, coordinating services like Lambda, SES, and DynamoDB. I also created mockups in Figma and wireframes to guide UI development using Material UI.
             </p>
-
+          
             <h4>Color Palette</h4>
-            <p>The color palette evokes the warmth and sweetness of a cozy donut shop while remaining visually soft and accessible:</p>
-            
+            <p>The palette was designed to match the warm, welcoming vibe of a neighborhood donut shop, while still being accessible:</p>
+          
             <div class="color-swatch" style="background-color: #FDF3E7;"></div>
             <p>#FDF3E7 (Cream – Background/Base Color)</p>
-            
+          
             <div class="color-swatch" style="background-color: #F7C59F;"></div>
             <p>#F7C59F (Frosted Peach – Accent/Highlight)</p>
-            
+          
             <div class="color-swatch" style="background-color: #8D5524;"></div>
             <p>#8D5524 (Chocolate Brown – Text/Primary Buttons)</p>
-            
+          
             <div class="color-swatch" style="background-color: #FADADD;"></div>
             <p>#FADADD (Strawberry Cream – Subtle Highlights, Borders, Secondary Elements)</p>
-            
+          
             <hr class="my-divider">
-
+          
             <section class="d-flex flex-column flex-md-row justify-content-center align-items-center mt-5">
-                <div class="w-100 me-md-2 mb-4 mb-md-0">
-                  <h4 class="text-center">Wireframe</h4>
-                  <iframe src="../assets/pdf/donut_shop_wireframe.pdf" title="Donut App Wireframe" class="responsive-iframe"></iframe>
-                </div>
-                <div class="w-100 ms-md-2">
-                  <h4 class="text-center">Design Mockup</h4>
-                  <iframe src="../assets/pdf/donut_shop_design_mockup.pdf" title="Donut App Design Mockup" class="responsive-iframe"></iframe>
-                </div>
-              </section>
-              
-              <hr class="my-divider">
-
+              <div class="w-100 me-md-2 mb-4 mb-md-0">
+                <h4 class="text-center">Wireframe</h4>
+                <iframe src="../assets/pdf/donut_shop_wireframe.pdf" title="Donut App Wireframe" class="responsive-iframe"></iframe>
+              </div>
+              <div class="w-100 ms-md-2">
+                <h4 class="text-center">Design Mockup</h4>
+                <iframe src="../assets/pdf/donut_shop_design_mockup.pdf" title="Donut App Design Mockup" class="responsive-iframe"></iframe>
+              </div>
+            </section>
+          
+            <hr class="my-divider">
+          
             <h3 class="mt-5"><i class="fas fa-server server-icon"></i> Technology Stack</h3>
             <ul>
-                <li><strong>AWS Lambda:</strong> Handles business logic for order processing and email generation.</li>
-                <li><strong>API Gateway:</strong> Accepts HTTP requests from clients.</li>
-                <li><strong>DynamoDB:</strong> Stores order data and inventory.</li>
-                <li><strong>Step Functions:</strong> Manages the order workflow including wait time calculation and confirmation.</li>
-                <li><strong>S3:</strong> Hosts downloadable order receipts.</li>
-                <li><strong>SES (Simple Email Service):</strong> Sends order confirmation emails with pre-signed receipt URLs.</li>
-                <li><strong>CodePipeline + CodeBuild + CodeDeploy:</strong> Used to automate CI/CD for backend code updates.</li>
+              <li><strong>AWS Lambda:</strong> Business logic for processing orders, calculating wait times, generating receipts, and verifying email identities.</li>
+              <li><strong>Amazon API Gateway:</strong> Exposes a REST API to receive order submissions from the frontend.</li>
+              <li><strong>AWS Step Functions:</strong> Coordinates the full order flow with branching logic, retries, and wait states.</li>
+              <li><strong>Amazon SES:</strong> Sends confirmation and "order ready" emails with pre-signed receipt URLs.</li>
+              <li><strong>DynamoDB:</strong> Stores orders, order history, and inventory.</li>
+              <li><strong>S3:</strong> Hosts downloadable PDF receipts with lifecycle policies for cleanup.</li>
+              <li><strong>EventBridge:</strong> Triggers order processing automatically on form submission.</li>
+              <li><strong>React + Material UI:</strong> Accessible, responsive frontend styled to match the shop’s theme.</li>
             </ul>
-
+          
             <h3 class="mt-5"><i class="fas fa-code coding-icon me-2"></i> My Coding Process</h3>
-            <p>I wrote modular Lambda functions using ES6, implemented security best practices like scoped IAM roles, and used Postman collections to test API responses. I used CloudWatch Logs and Alarms for debugging and monitoring. The pipeline automatically runs tests and deploys updates to production.</p>
-
+            <p>
+              I designed the backend to be modular and secure, using scoped IAM permissions and CloudWatch Logs for visibility. All frontend components are responsive and built with accessibility in mind. I used Postman to test my APIs and integrated AWS SDK v3 for serverless backend communication.
+            </p>
+          
             <section id="accessibility_in_coding" class="mt-5">
-                <h3><i class="fas fa-universal-access accessibility-icon"></i> Accessibility in My Coding Process</h3>
-                <p>Although this project is backend-focused, I ensured that any frontend components (admin dashboard or receipt pages) adhered to WCAG standards. I ran Lighthouse and used screen readers and keyboard testing for any public UI pages.</p>
+              <h3><i class="fas fa-universal-access accessibility-icon"></i> Accessibility in My Coding Process</h3>
+              <p>
+                The user interface follows WCAG guidelines with keyboard-friendly navigation, good color contrast, and semantic HTML. I tested the app using Lighthouse, screen readers, and colorblind filters to improve accessibility for all users.
+              </p>
             </section>
-
+          
             <a href="https://github.com/Harrison-Holt/Donut_Shop_Orders" class="btn btn-primary mt-2" target="_blank">View Project on GitHub</a>
-            <a href="https://donut-shop.harrisonholt.dev/" class="btn btn-primary mt-2" target="_blank">View Demo</a>
-
-        </section>
+            <a href="https://donut-shop.harrisonholt.dev/" class="btn btn-primary mt-2" target="_blank">View Live Demo</a>
+          </section>
+          
 
         <footer class="d-flex align-items-center justify-content-center">
             <h1>Let's Connect!</h1>
