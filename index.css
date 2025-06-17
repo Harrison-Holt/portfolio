@@ -2,6 +2,11 @@ h1, h2, h3, h4, h5, h6, p {
     font-family: 'Poppins';
     color: #fff; 
 }
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
 
 body {
     overflow-x: hidden;
@@ -10,22 +15,36 @@ body {
 a {
     text-decoration: none;
 }
-header {
-    background-image: url('./header.png');
-    background-position: center;
-    background-size: cover;
-    background-repeat: none;
-    background-repeat: no-repeat;
 
-      min-height: 100vh;
+
+header {
+  background-image: url('./header.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 2rem;
-
-
 }
+
+@media (max-width: 768px) {
+  header {
+    background-position: top center;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 
 
 
