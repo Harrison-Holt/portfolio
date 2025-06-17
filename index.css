@@ -17,6 +17,13 @@ header {
     background-repeat: none;
     background-repeat: no-repeat;
 
+      min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+
     @media (max-width: 768px) {
     background-size: contain; 
     background-position: top center;
