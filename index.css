@@ -15,7 +15,14 @@ header {
     background-position: center;
     background-size: cover;
     background-repeat: none;
+
+    @media (max-width: 768px) {
+    background-size: contain; 
+    background-position: top center;
+    }
 }
+
+
 
 .image_section {
     display: inline-block;
