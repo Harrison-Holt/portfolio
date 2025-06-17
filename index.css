@@ -24,10 +24,7 @@ header {
   text-align: center;
   padding: 2rem;
 
-    @media (max-width: 768px) {
-    background-size: contain; 
-    background-position: top center;
-    }
+
 }
 
 
