@@ -78,11 +78,11 @@ body {
     color: #4C70EF; 
 }
 
-#info_link {
+.info_link {
     color: #6583f0; 
 }
 
-#info_link:hover {
+.info_link:hover {
     color: #1b4af2; 
 }
 
