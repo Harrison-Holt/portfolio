@@ -37,6 +37,10 @@ html, body {
   padding: 0;
 }
 
+.desk_img {
+    max-height: 500px;
+    width: auto;
+}
 
 
 
@@ -52,8 +56,8 @@ html, body {
     border: 2px solid white;
     border-radius: 10%;
     z-index: -1;
-    width: 85%; 
-    height: 85%; 
+    width: 65%; 
+    height: 100%; 
     position: absolute;
 }
 
@@ -72,6 +76,14 @@ body {
 }
 .about_me_header {
     color: #4C70EF; 
+}
+
+#info_link {
+    color: #6583f0; 
+}
+
+#info_link:hover {
+    color: #1b4af2; 
 }
 
 .circle {
