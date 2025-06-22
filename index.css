@@ -68,8 +68,15 @@ html, body {
 
 .cert_box {
     height: 400px;
+
 }
 
+
+    @media (max-width: 576px) {
+        .cert_box {
+        height: 450px; 
+        }
+    }
 body {
     background: #212121
 }
