@@ -43,33 +43,14 @@ html, body {
 }
 
 
-
-.image_section {
-    display: inline-block;
-    position: relative;
-}
-
-.image_section::before {
-    top: 5%; 
-    left: 3%; 
-    content: '';
-    border: 2px solid white;
-    border-radius: 10%;
-    z-index: -1;
-    width: 65%; 
-    height: 100%; 
-    position: absolute;
-
-}
-
    @media (max-width: 768px ) {
         .image_section::before {
             top: 3%; 
             left: 2%; 
-            
+            width: 100%; 
         }
     }
-    
+
 .image_section img {
     display: block; 
     border-radius: 10%;
