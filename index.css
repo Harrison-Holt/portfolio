@@ -50,8 +50,8 @@ html, body {
 }
 
 .image_section::before {
-    top: 10px; 
-    left: 10px; 
+    top: 5%; 
+    left: 3%; 
     content: '';
     border: 2px solid white;
     border-radius: 10%;
@@ -59,24 +59,22 @@ html, body {
     width: 65%; 
     height: 100%; 
     position: absolute;
+
 }
 
+   @media (max-width: 768px ) {
+        .image_section::before {
+            top: 3%; 
+            left: 2%; 
+            
+        }
+    }
+    
 .image_section img {
     display: block; 
     border-radius: 10%;
 }
 
-.cert_box {
-    height: 400px;
-
-}
-
-
-    @media (max-width: 576px) {
-        .cert_box {
-        height: 500px; 
-        }
-    }
 body {
     background: #212121
 }
