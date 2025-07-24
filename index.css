@@ -16,7 +16,6 @@ a {
     text-decoration: none;
 }
 
-
 header {
   background-image: url('./header.png');
   background-position: center;
@@ -141,6 +140,10 @@ i {
 footer {
     background-color: #292C36;
     width: 100vh; 
+}
+
+footer a {
+    color: #7592fa
 }
 
 .cert_icon {
