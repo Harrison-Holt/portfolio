@@ -1,0 +1,9 @@
+
+.task_card {
+    margin: 10px;
+    padding: 10px;
+}
+
+.task_card:hover {
+    transform: scale(1.05);
+}
