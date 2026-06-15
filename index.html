@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harrison Holt - Portfolio</title>
+
+    <meta name="description" content="Hi, I’m Harrison Holt — a MERN full-stack developer and AWS-certified engineer focused on building accessible, scalable apps with clean UI, CI/CD automation, and secure cloud architecture." />
+    <meta name="keywords" content="Harrison Holt, Cloud Developer, AWS Developer, Accessible Web Developer, Portfolio, React, CI/CD, Backend Developer" />
+    <meta name="author" content="Harrison Holt" />
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
+
+        <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BQMTXB82DF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-BQMTXB82DF');
+    </script>
+</head>
+
+<body class="h-100">
+
+<header class="row min-vh-100 d-flex flex-column justify-content-between align-items-center">
+
+    <!-- Top Navigation -->
+    <nav class="col-12 d-flex justify-content-end gap-3 gap-md-5 mt-4 px-3">
+        <a href="#about_me_header" class="header_link" aria-label="About Me">ABOUT</a>
+        <a href="#what_i_do" class="header_link" aria-label="Skills I focus on">WHAT I DO</a>
+        <a href="#work" class="header_link" aria-label="My projects">WORK</a>
+        <a href="#accessibility" class="header_link" aria-label="Accessibility work">ACCESSIBILITY</a>
+    </nav>
+
+    <!-- Hero Content -->
+    <div class="col-12 d-flex flex-column justify-content-center align-items-center flex-grow-1">
+        <h1 class="mb-3">I'm Harrison Holt</h1>
+        <h2 class="mb-4">Building Accessible, Scalable Apps for the Cloud</h2>
+        <div class="d-flex justify-content-center align-items-center gap-4">
+            <a href="https://github.com/Harrison-Holt" target="blank" aria-label="GitHub">
+            <div class="circle"><i class="fa fa-github"></i></div> 
+            </a> 
+            <a href="https://www.linkedin.com/in/harrison-holt-18a703202/" target="blank" aria-label="GitHub"> 
+            <div class="circle"><i class="fa fa-linkedin"></i></div>   
+            </a>    
+            <a href="mailto:hholt2901@gmail.com" target="blank" aria-label="Email">
+            <div class="circle"><i class="fa fa-envelope"></i></div>   
+            </a>        
+        </div>
+    </div>
+</header>
+
+    <main class="container min-vh-100">
+        <section class="row mt-5">
+            <div class="col-12 col-md-6 image_section">
+                <img src="./desk.jpg" alt="desk setup" class="img-fluid desk_img"/>
+            </div>
+          <div class="col-12 col-md-6 section_m mt-5">
+            <h2 class="about_me_header" id="about_me_header">ABOUT ME</h2>
+            <h2 class="mt-3 mb-3">I'm Harrison Holt</h2>
+            <p>I'm currently a Jr. Software Developer Intern at Eigennet LLC, working hybrid from Greenville, SC with monthly rotations at HQ in Rockville, MD. I contribute to Eigennet’s products using Python, Django, React, and AWS services such as EC2 and RDS with MySQL. My focus is on building web apps that are fast, inclusive, and production-ready, while deepening my expertise in cloud-first backend architecture and accessible frontend design.</p>
+            <p>I hold a B.S. in Computer Science with a minor in Psychology from Clemson University and am currently completing the UT Austin Full Stack Software Development Certificate. I’m certified in AWS (Developer & Solutions Architect) and digital accessibility (<a href="https://www.dhs.gov/trusted-tester" target="_blank" class="info_link">DHS Trusted Tester</a>), and I’m an active member of the International Association of Accessibility Professionals (<a href="https://www.accessibilityassociation.org/about" target="_blank" class="info_link">IAAP</a>). These allow me to create applications that are scalable, secure, and usable by everyone.</p>
+            <p>Whether I'm designing an accessible UI, running Lighthouse and Pa11y tests in a CI/CD pipeline, or architecting an event-driven AWS system, I take pride in delivering high-quality code with real-world reliability.</p>
+            <p>This site was built with accessibility in mind and meets WCAG 2.1 AA standards, verified using Pa11y, Axe, Lighthouse, and WAVE, and tested with ANDI following DHS Trusted Tester methodology.</p>
+            <p>Outside of dev work, I'm passionate about military history and will never say no to a good book and a Dr Pepper.</p>
+
+            <a href="./Accessibility_Audit_Report_Harrison_Holt.pdf" 
+              class="btn btn-outline-info mt-3" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              aria-label="View Accessibility Audit Report for this website in a new tab">
+              View Accessibility Report
+            </a>
+
+        </div>
+        </section>
+        
+        <section class="row section_m mt-5" id="what_i_do">
+            <div class="col-12 d-flex flex-column justify-content-center align-items-center mt-5">
+                <h2 class="about_me_header mt-5">WHAT I DO</h2>
+                <h2 class="mt-2">SPECIALIZING IN</h2>
+            </div>
+            <div class="row d-flex justify-content-around align-items-center gap-2 mt-4">
+
+                <div class="col-12 col-md-3 d-flex flex-column justify-content-around align-items-center skills_box p-3" tabindex="0" role="region">
+                    <div class="d-flex justify-content-between align-items-center">
+                    <div class="icon_section me-3">
+                        <img src="./cloud_icon.png" alt="cloud icon" class="icon" />
+                    </div>
+                    <h3 class="mb-0">Cloud & AWS Development</h3>
+                    </div>
+                    <p class="mt-3">Building scalable, secure applications using AWS services like Lambda, API Gateway, RDS, Cognito, and more — with a focus on serverless architecture and CI/CD.</p>
+                </div>
+                   <div class="col-12 col-md-3 d-flex flex-column justify-content-around align-items-center skills_box p-3" tabindex="0" role="region">
+                        <div class="d-flex align-items-center">
+                        <div class="icon_section me-3">
+                        <img src="./MERN.png" alt="MERN icon" class="icon" />
+                    </div>
+                        <h3>MERN Stack Applications</h3>
+                    </div>
+                    <p class="mt-3">Full-stack JavaScript development using MongoDB, Express.js, React, and Node.js to deliver responsive, modern web apps from frontend to backend.</p>
+                </div>
+                   <div class="col-12 col-md-3 d-flex flex-column justify-content-around align-items-center skills_box p-3" tabindex="0" role="region">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="icon_section me-3">
+                        <img src="./accessibility.png" alt="Accessibility icon" class="icon" />
+                    </div>
+                        <h3 class="mt-3">Accessibility-First Development</h3>
+                    </div>
+                    <p class="mt-3">Designing inclusive interfaces with keyboard support, semantic HTML, and accessibility testing tools (WAVE, Pa11y, and Accessibility Insights).</p>
+                </div>
+            </div>
+        </section>
+
+<section class="row mb-5" id="work">
+  <div class="col-12 d-flex flex-column justify-content-center align-items-center mt-5">
+    <h2 class="about_me_header mt-5">PORTFOLIO</h2>
+    <h2 class="mt-2 mb-5">FEATURED PROJECTS</h2>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100 d-flex flex-column align-items-center p-3 project_card">
+        <img src="./truck.png" class="img-fluid" alt="truck on the highway" />
+        <h3 class="mt-3 text-center">The Good Driver Program</h3>
+        <p class="mt-3 text-center">A full-stack web application designed to reward safe driving behavior. Built by a 5-member Agile team using React, Node.js, AWS Lambda, API Gateway, RDS (MySQL), and Cognito. Served as Scrum Master and contributed to both frontend and backend development, emphasizing accessibility and scalability.</p>
+        <a class="btn btn-outline-info mt-auto" href="https://github.com/Harrison-Holt/The-Good-Driver-Program" target="_blank">View Details</a>
+      </div>
+    </div>
+
+  <div class="col">
+    <div class="card h-100 d-flex flex-column align-items-center p-3 project_card">
+      <img src="/chatterbox.jpg" class="img-fluid" alt="Team communication platform illustration" />
+      
+      <h3 class="mt-3 text-center">ChatterBox</h3>
+      
+      <p class="mt-3 text-center">
+        A full-stack team communication platform built with the MERN stack. 
+        Implements secure JWT authentication, protected API routes, and 
+        channel-based messaging architecture. Features include public channel 
+        creation, member-based access control, and persistent message storage 
+        using MongoDB. Designed to simulate a production-grade collaboration SaaS system.
+      </p>
+      
+      <a class="btn btn-outline-info mt-auto" tabindex="-1" href="https://github.com/Harrison-Holt/chatterbox-messaging-app">
+        view details
+      </a>
+    </div>
+  </div>
+
+
+    <div class="col">
+      <div class="card h-100 d-flex flex-column align-items-center p-3 project_card">
+        <img src="./flavorcraft.jpg" class="img-fluid" alt="Food Order Application" />
+        <h3 class="mt-3 text-center">FlavorCraft</h3>
+        <p class="mt-3 text-center">A full-stack React and Node.js recipe book application powered by AWS services for secure storage and deployment. Users can add, edit, and manage recipes with Context API state management and cloud-based data persistence. Designed for scalability, accessibility, and smooth user experience.</p>
+        <div class="d-flex justify-content-around align-items-center">
+        <a class="btn btn-outline-info m-3" href="https://github.com/Harrison-Holt/FlavorCraft" target="_blank">View Details</a>
+        <a class="btn btn-outline-info m-3" href="https://flavorcraft.harrisonholt.dev/" target="_blank">View Demo (In Progress)</a>
+        </div>
+      </div>
+    </div>
+
+</section>
+
+<section class="row mb-5" id="work">
+  <div class="col-12 d-flex flex-column justify-content-center align-items-center mt-5">
+    <h2 class="mt-2 mb-5">SUPPORTING PROJECTS</h2>
+  </div>
+
+ <div class="col">
+  <div class="card h-100 d-flex flex-column align-items-center p-3 project_card">
+    <img src="./to-do-list.jpg" class="img-fluid" alt="screenshot of to-do list app" />
+    <h3 class="mt-3 text-center">Vanilla JS To-Do List</h3>
+    <p class="mt-3 text-center">
+      A lightweight task manager built with object-oriented JavaScript. Features add/delete with
+      event delegation, persistent storage via localStorage, and unique ID management across reloads
+      using custom <code>toJSON</code>/<code>fromJSON</code> methods.
+    </p>
+    <a class="btn btn-outline-info mt-auto" href="https://github.com/Harrison-Holt/portfolio/tree/master/VanillaJS-ToDoList" target="_blank">View Details</a>
+  </div>
+</div>
+
+<div class="col">
+<div class="card h-100 d-flex flex-column p-3 project_card">
+  <img src="./weather_app.jpg" class="img-fluid" alt="screenshot of Weather App UI" />
+  <h3 class="mt-3 text-center">React Weather App</h3>
+  <p class="mt-3 text-center">
+    A responsive weather application built with React and Material-UI. Features city-based search, 
+    real-time current conditions and a 7-day forecast via WeatherAPI, error handling for invalid inputs, 
+    localStorage persistence, and component-based architecture for clean state management.
+  </p>
+  <div class="d-flex justify-content-center align-items-center">
+  <a class="btn btn-outline-info m-3" href="https://github.com/Harrison-Holt/Weather_App" target="_blank">View Details</a>
+  <a class="btn btn-outline-info m-3" href="https://weatherapp.harrisonholt.dev/" target="_blank">View Demo</a>
+  </div>
+</div>
+</div>
+
+</section>
+
+<section class="row d-flex flex-column text-center my-5 mt-5" id="accessibility">
+  <h2 class="about_me_header mt-5">ACCESSIBILITY WORK</h2>
+  <p class="mt-2 mb-4">Designing with inclusion in mind</p>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4 mt-3">
+
+    <!-- Accessible Kiosk -->
+    <div class="col">
+      <div class="card h-100 d-flex flex-column align-items-center p-3 project_card">
+          <div class="ratio ratio-16x9">
+            <img src="./kiosk.png" class="img-fluid object-fit-contain" alt="Illustration of a touchscreen kiosk for elderly users" class="accessibility_pic"/>
+          </div>
+        <h3 class="mt-3 text-center">Accessible Kiosk for Nursing Home</h3>
+        <p class="mt-3 text-center">
+          Designed a touchscreen kiosk system for elderly residents to communicate with staff, access schedules, and submit requests. Focused on ease of use, voice commands, magnification, and paper printouts.
+        </p>
+        <a class="btn btn-outline-info mt-auto" href="https://github.com/Harrison-Holt/Accessible-Kiosk-Nursing-Home" target="_blank">View Details</a>
+      </div>
+    </div>
+
+    <!-- NYC Ferry Redesign -->
+    <div class="col">
+      <div class="card h-100 d-flex flex-column align-items-center p-3 project_card">
+          <div class="ratio ratio-16x9">
+            <img src="./ferry.png" class="img-fluid object-fit-contain" alt="Mockup of NYC Ferry app on a mobile phone" class="accessibility_pic"/>
+          </div>
+        <h3 class="mt-3 text-center">NYC Ferry Accessibility Redesign</h3>
+        <p class="mt-3 text-center">
+          Reimagined the NYC Ferry app to support disabled commuters and tourists. Included accessible route info, color contrast updates, voice-friendly navigation, and mockups tested by real users.
+        </p>
+        <a class="btn btn-outline-info mt-auto" href="https://github.com/Harrison-Holt/NYC-Ferry-Redesign" target="_blank">View Details</a>
+      </div>
+    </div>
+
+    <!-- Local Bus Tracker -->
+    <div class="col">
+      <div class="card h-100 d-flex flex-column align-items-center p-3 project_card">
+        <div class="ratio ratio-16x9">
+          <img src="./bus.png" class="img-fluid object-fit-contain" alt="Mockup of a bus tracker app interface" />
+        </div>
+        <h3 class="mt-3 text-center">Bus Tracker App Redesign</h3>
+        <p class="mt-3 text-center">
+          Led HCI project to redesign a bus tracking app using inclusive design and accessibility heuristics. Delivered Figma mockups informed by user interviews, think-aloud testing, and accessibility audits.
+        </p>
+        <a class="btn btn-outline-info mt-auto" href="#" target="_blank">View Details</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="row d-flex flex-column text-center my-5 mt-5">
+  <h2 class="about_me_header mt-5">CERTIFICATIONS</h2>
+  <p class="mt-2 mb-4">Industry-recognized certifications demonstrating cloud expertise and accessibility knowledge.</p>
+
+<div class="row row-cols-1 row-cols-md-2 mt-5 mb-5">
+
+  
+      <!---UT Cert-->
+    <div class="col mb-5 d-flex">
+    <div class="border rounded p-3 text-start d-flex flex-column h-100  justify-content-start align-items-center">
+
+      <div class="d-flex justify-content-center align-items-center w-75">
+      <img src="./UT.png" alt="UT Austin Seal" class="cert_icon"/>
+      <h3 class="text-center m-2">Full Stack Development Certificate</h3>
+      </div>
+
+      <p class="mt-3">28-week program covering the MERN stack, TypeScript, Next.js, SQL/NoSQL, and AWS deployment. Completed 32 hands-on projects, including a capstone MERN app, gaining experience in responsive design, API integration, authentication, testing, and database design.</p>
+      <a href="./utaustin.pdf" class="btn btn-outline-info mt-auto" role="button" target="_blank">View Certificate</a>
+    </div>
+    </div>
+
+    <!---AWS SAA-->
+  <div class="col mb-5 d-flex">
+    <div class="border rounded p-3 text-start d-flex flex-column h-100  justify-content-start align-items-center">
+
+      <div class="d-flex justify-content-center align-items-center w-75">
+        <img src="./aws-saa.png" alt="AWS SAA icon" class="cert_icon"/>
+        <h3 class="text-center">AWS Solutions Architect</h3>
+      </div>
+
+      <p class="mt-3">Validates my ability to design secure, scalable AWS solutions using real-world architectural best practices. I’ve applied these skills to build resilient, cloud-native systems in hands-on projects.</p>
+
+      <a href="./Harrison Holt AWS SAA Cert.pdf" class="btn btn-outline-info mt-auto" role="button" target="_blank">View Certificate</a>
+
+    </div>
+  </div>
+
+
+
+      <!---AWS DEV-->
+    <div class="col mb-5 d-flex">
+    <div class="border rounded p-3 text-start d-flex flex-column h-100  justify-content-start align-items-center">
+
+      <div class="d-flex justify-content-center align-items-center w-75">
+      <img src="./aws-dev.png" alt="AWS Dev icon" class="cert_icon"/>
+      <h3>AWS Developer</h3>
+      </div>
+      
+      <p class="mt-3">Demonstrates my ability to build, deploy, and debug cloud-native apps using AWS services, SDKs, and CI/CD pipelines. I’ve used these skills to create secure, serverless applications with real-time monitoring and automation.</p>
+      <a href="./Harrison Holt AWS DVA Cert.pdf" class="btn btn-outline-info mt-auto" role="button" target="_blank">View Certificate</a>
+    </div>
+  </div>
+
+      <!---DHS Cert-->
+    <div class="col mb-5 d-flex">
+    <div class="border rounded p-3 text-start d-flex flex-column h-100  justify-content-start align-items-center">
+
+      <div class="d-flex justify-content-center align-items-center w-75">
+      <img src="./dhs.png" alt="DHS Trusted Tester icon" class="cert_icon"/>
+      <h3 class="text-center m-2">DHS Trusted Tester</h3>
+      </div>
+
+      <p class="mt-3">Demonstrates hands-on ability to evaluate web content for Section 508 compliance using code inspection. This certifies I can conduct manual accessibility audits beyond automated tools, ensuring compatibility with assistive technologies.</p>
+      <a href="./Harrison Holt DHS Trusted Truster Cert.pdf" class="btn btn-outline-info mt-auto" role="button" target="_blank">View Certificate</a>
+    </div>
+    </div>
+
+</section>
+
+</main>
+<footer class="container-fluid text-center mt-5 py-3">
+  <p class="mb-0">
+    &copy; 2026 Harrison Holt &nbsp;· &nbsp;
+    <a href="./Resume.pdf" role="button" target="_blank" rel="noopener noreferrer">
+      View Resume
+    </a>
+  </p>
+</footer>
+
+
+
+</body>
+</html>
