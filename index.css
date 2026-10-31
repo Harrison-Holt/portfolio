@@ -1,70 +1,66 @@
-h1, h2, h3, h4, h5, h6, p {
-    font-family: 'Poppins';
-    color: #fff; 
+
+/* =========================================
+   GLOBAL STYLING
+========================================= */
+
+* {
+    box-sizing: border-box;
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 body {
-    overflow-x: hidden;
     background: #212121;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
 }
 
 a {
     text-decoration: none;
 }
 
+img {
+    max-width: 100%;
+}
+
+/* =========================================
+   HEADER / HERO
+========================================= */
+
 header {
-  background-image: url('./header.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-
-.desk_img {
-    max-height: 500px;
-    width: auto;
-}
-
-@media (max-width: 768px) {
-    .image_section::before {
-        top: 3%; 
-        left: 2%; 
-        width: 100%; 
-    }
-}
-
-.image_section img {
-    display: block; 
-    border-radius: 10%;
+    background-image: url('./header.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
 .header_link {
     color: #fff;
     font-size: 18px;
     text-decoration: none;
+    transition: color 0.2s ease;
 }
 
-.about_me_header {
-    color: #4C70EF; 
-}
-
-.info_link {
-    color: #6583f0; 
-    font-weight: 600;
-}
-
-.info_link:hover {
-    text-decoration: underline;
+.header_link:hover {
+    color: #7592fa;
 }
 
 .circle {
@@ -72,27 +68,65 @@ header {
     height: 60px;
     border-radius: 50%;
     background-color: #ccc;
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: center;
     font-size: 24px;
+    transition: transform 0.2s ease;
+}
+
+.circle:hover {
+    transform: translateY(-4px);
 }
 
 i {
-    color: #000; 
+    color: #000;
 }
+
+/* =========================================
+   ABOUT SECTION
+========================================= */
+
+.desk_img {
+    display: block;
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    border-radius: 10%;
+}
+
+.image_section img {
+    display: block;
+}
+
+.about_me_header {
+    color: #4C70EF;
+}
+
+.info_link {
+    color: #6583f0;
+    font-weight: 600;
+}
+
+.info_link:hover {
+    text-decoration: underline;
+}
+
+/* =========================================
+   SKILLS SECTION
+========================================= */
 
 .skills_box {
     background-color: #292C36;
     border-radius: 20px;
     width: 100%;
     max-width: 400px;
-    height: 100%;
     min-height: 260px;
+    height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     box-sizing: border-box;
-    
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
@@ -102,28 +136,37 @@ i {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 
-.resume {
-    background-color: #292C36;
-    border-radius: 5%;
-    padding: 25px; 
-    width: 50%; 
-}
-
 .icon_section {
     background-color: #38405A;
     border-radius: 15px;
-    padding: 20px; 
+    padding: 20px;
     display: inline-block;
+    flex-shrink: 0;
 }
 
 .icon {
-    height: 45px; 
-    width: 45px; 
-    display: block; 
+    height: 45px;
+    width: 45px;
+    display: block;
 }
 
+/* =========================================
+   RESUME
+========================================= */
+
+.resume {
+    background-color: #292C36;
+    border-radius: 5%;
+    padding: 25px;
+    width: 50%;
+}
+
+/* =========================================
+   PROJECTS
+========================================= */
+
 .project_card {
-    background-color: #292C36; 
+    background-color: #292C36;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
     border-radius: 10px;
@@ -141,9 +184,13 @@ i {
     border-radius: 8px;
 }
 
+/* =========================================
+   FOOTER
+========================================= */
+
 footer {
     background-color: #292C36;
-    width: 100%; 
+    width: 100%;
 }
 
 footer a {
@@ -152,6 +199,241 @@ footer a {
 
 .cert_icon {
     max-height: 200px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* =========================================
+   TABLET RESPONSIVENESS
+========================================= */
+
+@media (max-width: 768px) {
+
+    /* Header */
+
+    header {
+        padding: 20px 12px;
+    }
+
+    .header_link {
+        font-size: 15px;
+    }
+
+    header h1 {
+        font-size: clamp(2rem, 6vw, 2.8rem);
+        line-height: 1.2;
+    }
+
+    header h2 {
+        font-size: clamp(1.1rem, 3vw, 1.5rem);
+        line-height: 1.5;
+        max-width: 90%;
+    }
+
+    .circle {
+        width: 50px;
+        height: 50px;
+        font-size: 21px;
+    }
+
+    /* Main content */
+
+    main.container {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .desk_img {
+        width: 100%;
+        max-height: 400px;
+        object-fit: cover;
+    }
+
+    .image_section {
+        margin-bottom: 25px;
+    }
+
+    .section_m {
+        margin-top: 2rem;
+    }
+
+    /* Skills */
+
+    .skills_box {
+        min-height: 230px;
+        max-width: 100%;
+    }
+
+    .skills_box h3 {
+        font-size: 1.1rem;
+    }
+
+    /* Resume */
+
+    .resume {
+        width: 100%;
+    }
+
+    /* Projects */
+
+    .project_card img {
+        height: 180px;
+    }
+}
+
+/* =========================================
+   MOBILE RESPONSIVENESS
+========================================= */
+
+@media (max-width: 576px) {
+
+    /* Header */
+
+    header {
+        min-height: 100svh;
+        padding: 20px 12px;
+    }
+
+    header nav {
+        gap: 12px !important;
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
+
+    .header_link {
+        font-size: 12px;
+        letter-spacing: 0.3px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+
+    header h2 {
+        font-size: 1rem;
+        line-height: 1.5;
+        max-width: 320px;
+        margin-bottom: 25px;
+    }
+
+    .circle {
+        width: 44px;
+        height: 44px;
+        font-size: 19px;
+    }
+
+    /* Main content */
+
+    main.container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .image_section {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .desk_img {
+        width: 100%;
+        max-height: 320px;
+        object-fit: cover;
+        border-radius: 15px;
+    }
+
+    .about_me_header {
+        font-size: 1.1rem;
+    }
+
+    main h2:not(.about_me_header) {
+        font-size: 1.5rem;
+        line-height: 1.3;
+    }
+
+    main p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    /* Skills */
+
+    .skills_box {
+        min-height: auto;
+        padding: 20px !important;
+        max-width: 100%;
+    }
+
+    .skills_box h3 {
+        font-size: 1rem !important;
+        line-height: 1.4;
+    }
+
+    .skills_box p {
+        font-size: 13px;
+        line-height: 1.6;
+    }
+
+    .icon_section {
+        padding: 14px;
+    }
+
+    .icon {
+        width: 38px;
+        height: 38px;
+    }
+
+    /* Resume */
+
+    .resume {
+        width: 100%;
+        padding: 18px;
+    }
+
+    /* Projects */
+
+    .project_card img {
+        height: 170px;
+    }
+
+    /* Certificates */
+
+    .cert_icon {
+        max-height: 140px;
+    }
+
+    /* Buttons */
+
+    .btn {
+        white-space: normal;
+        max-width: 100%;
+    }
+
+    /* Disable hover transformations on touch devices */
+
+    .skills_box:hover,
+    .project_card:hover,
+    .circle:hover {
+        transform: none;
+        box-shadow: none;
+    }
+}
+
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
 }
 
 
